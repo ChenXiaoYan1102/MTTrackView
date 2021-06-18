@@ -11,8 +11,6 @@
 		8BD3F2B4267C5131002F3097 /* XJTrackModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2AA267C5131002F3097 /* XJTrackModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BD3F2B5267C5131002F3097 /* XJTrackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2AB267C5131002F3097 /* XJTrackModel.m */; };
 		8BD3F2B6267C5131002F3097 /* XJTrackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2AC267C5131002F3097 /* XJTrackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BD3F2BE267C6FA7002F3097 /* mt_location_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3F2BC267C6FA7002F3097 /* mt_location_icon@3x.png */; };
-		8BD3F2BF267C6FA7002F3097 /* mt_location_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3F2BD267C6FA7002F3097 /* mt_location_icon@2x.png */; };
 		8BD3F2C6267C7003002F3097 /* XJAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2C2267C7002002F3097 /* XJAnnotationView.h */; };
 		8BD3F2C7267C7003002F3097 /* XJAnnotationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2C3267C7002002F3097 /* XJAnnotationModel.m */; };
 		8BD3F2C8267C7003002F3097 /* XJAnnotationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2C4267C7003002F3097 /* XJAnnotationModel.h */; };
@@ -23,6 +21,8 @@
 		8BD3F2CE267C7107002F3097 /* XJTrackView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD3F2AC267C5131002F3097 /* XJTrackView.h */; };
 		8BD3F2D1267C7199002F3097 /* MTTrackViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2CF267C7199002F3097 /* MTTrackViewHelper.h */; };
 		8BD3F2D2267C719A002F3097 /* MTTrackViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2D0267C7199002F3097 /* MTTrackViewHelper.m */; };
+		8BD3F2D5267C79AD002F3097 /* mt_location_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3F2BD267C6FA7002F3097 /* mt_location_icon@2x.png */; };
+		8BD3F2D6267C79AD002F3097 /* mt_location_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3F2BC267C6FA7002F3097 /* mt_location_icon@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -320,8 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BD3F2BE267C6FA7002F3097 /* mt_location_icon@3x.png in Resources */,
-				8BD3F2BF267C6FA7002F3097 /* mt_location_icon@2x.png in Resources */,
+				8BD3F2D5267C79AD002F3097 /* mt_location_icon@2x.png in Resources */,
+				8BD3F2D6267C79AD002F3097 /* mt_location_icon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

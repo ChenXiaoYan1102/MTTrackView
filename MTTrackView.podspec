@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.summary      = "MTTrackView的一个简单示范工程."
 
   s.description  = <<-DESC
-                   传入两个坐标，显示这两个点的轨迹.
+                   传入两个坐标，显示这两个点的轨迹.苹果原生定位实现
                    DESC
 
-  s.homepage     = "https://github.com/ChenXiaoYan1102/MTTrackView"
+  s.homepage     = "https://github.com/ChenXiaoYan1102"
 
   s.license      = "MIT"
 
@@ -17,8 +17,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "10.0"
 
   s.source       = { :git => "git@github.com:ChenXiaoYan1102/MTTrackView.git", :tag => "#{s.version}" }
-
-  # s.dependency "Masonry", "~> 1.1.0"
 
   s.public_header_files = "#{s.name}/*.h", "#{s.name}/include/**/*.h"
   s.source_files = "#{s.name}/**/*.{h,m}"

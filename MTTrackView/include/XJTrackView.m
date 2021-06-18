@@ -5,8 +5,8 @@
 //  Created by APPLE on 2021/6/3.
 //
 
-#import "XJTrackView.h"
-#import "XJTrackModel.h"
+#import <MTTrackView/XJTrackView.h>
+#import <MTTrackView/XJTrackModel.h>
 #import "XJAnnotationModel.h"
 #import "XJAnnotationView.h"
 

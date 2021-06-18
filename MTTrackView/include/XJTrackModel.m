@@ -5,7 +5,7 @@
 //  Created by APPLE on 2021/6/3.
 //
 
-#import "XJTrackModel.h"
+#import <MTTrackView/XJTrackModel.h>
 #import "MTTrackViewHelper.h"
 
 @implementation XJTrackModel
