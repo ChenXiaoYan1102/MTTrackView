@@ -23,7 +23,6 @@
 		8BD3F2CE267C7107002F3097 /* XJTrackView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD3F2AC267C5131002F3097 /* XJTrackView.h */; };
 		8BD3F2D1267C7199002F3097 /* MTTrackViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2CF267C7199002F3097 /* MTTrackViewHelper.h */; };
 		8BD3F2D2267C719A002F3097 /* MTTrackViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2D0267C7199002F3097 /* MTTrackViewHelper.m */; };
-		9DAB2D50EBE999AE2A37A885 /* libPods-MTTrackView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 677388AE4324B1A753459EEE /* libPods-MTTrackView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		677388AE4324B1A753459EEE /* libPods-MTTrackView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTTrackView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5F0E4E1B0D99260099CF46 /* libMTTrackView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMTTrackView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5F0E591B0D99260099CF46 /* MTTrackViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTTrackViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5F0E741B0D9B7F0099CF46 /* MTTrackViewBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTTrackViewBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DAB2D50EBE999AE2A37A885 /* libPods-MTTrackView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +181,6 @@
 		B751DA4B06FDDDCD6623FC8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				677388AE4324B1A753459EEE /* libPods-MTTrackView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
