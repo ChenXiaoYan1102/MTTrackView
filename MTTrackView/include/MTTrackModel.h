@@ -1,5 +1,5 @@
 //
-//  XJTrackModel.h
+//  MTTrackModel.h
 //  Demo
 //
 //  Created by APPLE on 2021/6/3.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XJTrackModel : NSObject <NSCopying>
+@interface MTTrackModel : NSObject <NSCopying>
 //坐标
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 //正标题

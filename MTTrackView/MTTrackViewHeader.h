@@ -8,5 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import <MTTrackView/XJTrackView.h>
-#import <MTTrackView/XJTrackModel.h>
+#import <MTTrackView/MTTrackView.h>
+#import <MTTrackView/MTTrackModel.h>
+#import <MTTrackView/MTCoreLocationTransform.h>

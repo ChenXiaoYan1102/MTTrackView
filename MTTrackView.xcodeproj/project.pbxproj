@@ -7,22 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BD3F2B3267C5131002F3097 /* XJTrackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2A9267C5131002F3097 /* XJTrackView.m */; };
-		8BD3F2B4267C5131002F3097 /* XJTrackModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2AA267C5131002F3097 /* XJTrackModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BD3F2B5267C5131002F3097 /* XJTrackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2AB267C5131002F3097 /* XJTrackModel.m */; };
-		8BD3F2B6267C5131002F3097 /* XJTrackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2AC267C5131002F3097 /* XJTrackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BD3F2C6267C7003002F3097 /* XJAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2C2267C7002002F3097 /* XJAnnotationView.h */; };
-		8BD3F2C7267C7003002F3097 /* XJAnnotationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2C3267C7002002F3097 /* XJAnnotationModel.m */; };
-		8BD3F2C8267C7003002F3097 /* XJAnnotationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2C4267C7003002F3097 /* XJAnnotationModel.h */; };
-		8BD3F2C9267C7003002F3097 /* XJAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2C5267C7003002F3097 /* XJAnnotationView.m */; };
+		8BD3F2B3267C5131002F3097 /* MTTrackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2A9267C5131002F3097 /* MTTrackView.m */; };
+		8BD3F2B4267C5131002F3097 /* MTTrackModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2AA267C5131002F3097 /* MTTrackModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD3F2B5267C5131002F3097 /* MTTrackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2AB267C5131002F3097 /* MTTrackModel.m */; };
+		8BD3F2B6267C5131002F3097 /* MTTrackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2AC267C5131002F3097 /* MTTrackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD3F2C6267C7003002F3097 /* MTAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2C2267C7002002F3097 /* MTAnnotationView.h */; };
+		8BD3F2C7267C7003002F3097 /* MTAnnotationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2C3267C7002002F3097 /* MTAnnotationModel.m */; };
+		8BD3F2C8267C7003002F3097 /* MTAnnotationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2C4267C7003002F3097 /* MTAnnotationModel.h */; };
+		8BD3F2C9267C7003002F3097 /* MTAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2C5267C7003002F3097 /* MTAnnotationView.m */; };
 		8BD3F2CB267C7021002F3097 /* MTTrackViewHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2CA267C7021002F3097 /* MTTrackViewHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BD3F2CC267C7107002F3097 /* MTTrackViewHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD3F2CA267C7021002F3097 /* MTTrackViewHeader.h */; };
-		8BD3F2CD267C7107002F3097 /* XJTrackModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD3F2AA267C5131002F3097 /* XJTrackModel.h */; };
-		8BD3F2CE267C7107002F3097 /* XJTrackView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD3F2AC267C5131002F3097 /* XJTrackView.h */; };
+		8BD3F2CD267C7107002F3097 /* MTTrackModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD3F2AA267C5131002F3097 /* MTTrackModel.h */; };
+		8BD3F2CE267C7107002F3097 /* MTTrackView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD3F2AC267C5131002F3097 /* MTTrackView.h */; };
 		8BD3F2D1267C7199002F3097 /* MTTrackViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD3F2CF267C7199002F3097 /* MTTrackViewHelper.h */; };
 		8BD3F2D2267C719A002F3097 /* MTTrackViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3F2D0267C7199002F3097 /* MTTrackViewHelper.m */; };
-		8BD3F2D5267C79AD002F3097 /* mt_location_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3F2BD267C6FA7002F3097 /* mt_location_icon@2x.png */; };
-		8BD3F2D6267C79AD002F3097 /* mt_location_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3F2BC267C6FA7002F3097 /* mt_location_icon@3x.png */; };
+		8BD8753E26806945006D4A11 /* MTCoreLocationTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD8753C26806945006D4A11 /* MTCoreLocationTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD8753F26806945006D4A11 /* MTCoreLocationTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8753D26806945006D4A11 /* MTCoreLocationTransform.m */; };
+		8BD8754026806AE9006D4A11 /* MTCoreLocationTransform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BD8753C26806945006D4A11 /* MTCoreLocationTransform.h */; };
+		8BD8754626807EAF006D4A11 /* mt_location_begin_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8754226807EAF006D4A11 /* mt_location_begin_icon@2x.png */; };
+		8BD8754726807EAF006D4A11 /* mt_location_begin_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8754326807EAF006D4A11 /* mt_location_begin_icon@3x.png */; };
+		8BD8754826807EAF006D4A11 /* mt_location_end_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8754426807EAF006D4A11 /* mt_location_end_icon@2x.png */; };
+		8BD8754926807EAF006D4A11 /* mt_location_end_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8754526807EAF006D4A11 /* mt_location_end_icon@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +47,10 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				8BD8754026806AE9006D4A11 /* MTCoreLocationTransform.h in CopyFiles */,
 				8BD3F2CC267C7107002F3097 /* MTTrackViewHeader.h in CopyFiles */,
-				8BD3F2CD267C7107002F3097 /* XJTrackModel.h in CopyFiles */,
-				8BD3F2CE267C7107002F3097 /* XJTrackView.h in CopyFiles */,
+				8BD3F2CD267C7107002F3097 /* MTTrackModel.h in CopyFiles */,
+				8BD3F2CE267C7107002F3097 /* MTTrackView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,19 +61,23 @@
 		6D5F0E591B0D99260099CF46 /* MTTrackViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTTrackViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5F0E741B0D9B7F0099CF46 /* MTTrackViewBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTTrackViewBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD3F2A6267C50F0002F3097 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BD3F2A9267C5131002F3097 /* XJTrackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJTrackView.m; sourceTree = "<group>"; };
-		8BD3F2AA267C5131002F3097 /* XJTrackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJTrackModel.h; sourceTree = "<group>"; };
-		8BD3F2AB267C5131002F3097 /* XJTrackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJTrackModel.m; sourceTree = "<group>"; };
-		8BD3F2AC267C5131002F3097 /* XJTrackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJTrackView.h; sourceTree = "<group>"; };
-		8BD3F2BC267C6FA7002F3097 /* mt_location_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mt_location_icon@3x.png"; path = "../../../../Downloads/mt_location_icon@3x.png"; sourceTree = "<group>"; };
-		8BD3F2BD267C6FA7002F3097 /* mt_location_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mt_location_icon@2x.png"; path = "../../../../Downloads/mt_location_icon@2x.png"; sourceTree = "<group>"; };
-		8BD3F2C2267C7002002F3097 /* XJAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJAnnotationView.h; sourceTree = "<group>"; };
-		8BD3F2C3267C7002002F3097 /* XJAnnotationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJAnnotationModel.m; sourceTree = "<group>"; };
-		8BD3F2C4267C7003002F3097 /* XJAnnotationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJAnnotationModel.h; sourceTree = "<group>"; };
-		8BD3F2C5267C7003002F3097 /* XJAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJAnnotationView.m; sourceTree = "<group>"; };
+		8BD3F2A9267C5131002F3097 /* MTTrackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTrackView.m; sourceTree = "<group>"; };
+		8BD3F2AA267C5131002F3097 /* MTTrackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTrackModel.h; sourceTree = "<group>"; };
+		8BD3F2AB267C5131002F3097 /* MTTrackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTrackModel.m; sourceTree = "<group>"; };
+		8BD3F2AC267C5131002F3097 /* MTTrackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTrackView.h; sourceTree = "<group>"; };
+		8BD3F2C2267C7002002F3097 /* MTAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAnnotationView.h; sourceTree = "<group>"; };
+		8BD3F2C3267C7002002F3097 /* MTAnnotationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAnnotationModel.m; sourceTree = "<group>"; };
+		8BD3F2C4267C7003002F3097 /* MTAnnotationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAnnotationModel.h; sourceTree = "<group>"; };
+		8BD3F2C5267C7003002F3097 /* MTAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAnnotationView.m; sourceTree = "<group>"; };
 		8BD3F2CA267C7021002F3097 /* MTTrackViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTrackViewHeader.h; sourceTree = "<group>"; };
 		8BD3F2CF267C7199002F3097 /* MTTrackViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTrackViewHelper.h; sourceTree = "<group>"; };
 		8BD3F2D0267C7199002F3097 /* MTTrackViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTrackViewHelper.m; sourceTree = "<group>"; };
+		8BD8753C26806945006D4A11 /* MTCoreLocationTransform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCoreLocationTransform.h; sourceTree = "<group>"; };
+		8BD8753D26806945006D4A11 /* MTCoreLocationTransform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCoreLocationTransform.m; sourceTree = "<group>"; };
+		8BD8754226807EAF006D4A11 /* mt_location_begin_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mt_location_begin_icon@2x.png"; path = "../../../../Downloads/mt_location_begin_icon@2x.png"; sourceTree = "<group>"; };
+		8BD8754326807EAF006D4A11 /* mt_location_begin_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mt_location_begin_icon@3x.png"; path = "../../../../Downloads/mt_location_begin_icon@3x.png"; sourceTree = "<group>"; };
+		8BD8754426807EAF006D4A11 /* mt_location_end_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mt_location_end_icon@2x.png"; path = "../../../../Downloads/mt_location_end_icon@2x.png"; sourceTree = "<group>"; };
+		8BD8754526807EAF006D4A11 /* mt_location_end_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mt_location_end_icon@3x.png"; path = "../../../../Downloads/mt_location_end_icon@3x.png"; sourceTree = "<group>"; };
 		A8E4A942C8F48CB2C61CA669 /* Pods-MTTrackView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTTrackView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTTrackView/Pods-MTTrackView.debug.xcconfig"; sourceTree = "<group>"; };
 		EE730033E2C3F99A12833890 /* Pods-MTTrackView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTTrackView.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTTrackView/Pods-MTTrackView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,8 +132,10 @@
 		8BD3F291267C50DC002F3097 /* MTTrackViewBundle */ = {
 			isa = PBXGroup;
 			children = (
-				8BD3F2BD267C6FA7002F3097 /* mt_location_icon@2x.png */,
-				8BD3F2BC267C6FA7002F3097 /* mt_location_icon@3x.png */,
+				8BD8754226807EAF006D4A11 /* mt_location_begin_icon@2x.png */,
+				8BD8754326807EAF006D4A11 /* mt_location_begin_icon@3x.png */,
+				8BD8754426807EAF006D4A11 /* mt_location_end_icon@2x.png */,
+				8BD8754526807EAF006D4A11 /* mt_location_end_icon@3x.png */,
 			);
 			path = MTTrackViewBundle;
 			sourceTree = "<group>";
@@ -149,10 +161,12 @@
 		8BD3F2A8267C5131002F3097 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				8BD3F2AA267C5131002F3097 /* XJTrackModel.h */,
-				8BD3F2AB267C5131002F3097 /* XJTrackModel.m */,
-				8BD3F2AC267C5131002F3097 /* XJTrackView.h */,
-				8BD3F2A9267C5131002F3097 /* XJTrackView.m */,
+				8BD3F2AA267C5131002F3097 /* MTTrackModel.h */,
+				8BD3F2AB267C5131002F3097 /* MTTrackModel.m */,
+				8BD3F2AC267C5131002F3097 /* MTTrackView.h */,
+				8BD3F2A9267C5131002F3097 /* MTTrackView.m */,
+				8BD8753C26806945006D4A11 /* MTCoreLocationTransform.h */,
+				8BD8753D26806945006D4A11 /* MTCoreLocationTransform.m */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -170,10 +184,10 @@
 		8BD3F2C1267C7002002F3097 /* XJAnnotation */ = {
 			isa = PBXGroup;
 			children = (
-				8BD3F2C4267C7003002F3097 /* XJAnnotationModel.h */,
-				8BD3F2C3267C7002002F3097 /* XJAnnotationModel.m */,
-				8BD3F2C2267C7002002F3097 /* XJAnnotationView.h */,
-				8BD3F2C5267C7003002F3097 /* XJAnnotationView.m */,
+				8BD3F2C4267C7003002F3097 /* MTAnnotationModel.h */,
+				8BD3F2C3267C7002002F3097 /* MTAnnotationModel.m */,
+				8BD3F2C2267C7002002F3097 /* MTAnnotationView.h */,
+				8BD3F2C5267C7003002F3097 /* MTAnnotationView.m */,
 			);
 			path = XJAnnotation;
 			sourceTree = "<group>";
@@ -201,12 +215,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD8753E26806945006D4A11 /* MTCoreLocationTransform.h in Headers */,
 				8BD3F2CB267C7021002F3097 /* MTTrackViewHeader.h in Headers */,
-				8BD3F2B4267C5131002F3097 /* XJTrackModel.h in Headers */,
+				8BD3F2B4267C5131002F3097 /* MTTrackModel.h in Headers */,
 				8BD3F2D1267C7199002F3097 /* MTTrackViewHelper.h in Headers */,
-				8BD3F2B6267C5131002F3097 /* XJTrackView.h in Headers */,
-				8BD3F2C6267C7003002F3097 /* XJAnnotationView.h in Headers */,
-				8BD3F2C8267C7003002F3097 /* XJAnnotationModel.h in Headers */,
+				8BD3F2B6267C5131002F3097 /* MTTrackView.h in Headers */,
+				8BD3F2C6267C7003002F3097 /* MTAnnotationView.h in Headers */,
+				8BD3F2C8267C7003002F3097 /* MTAnnotationModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +335,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BD3F2D5267C79AD002F3097 /* mt_location_icon@2x.png in Resources */,
-				8BD3F2D6267C79AD002F3097 /* mt_location_icon@3x.png in Resources */,
+				8BD8754726807EAF006D4A11 /* mt_location_begin_icon@3x.png in Resources */,
+				8BD8754926807EAF006D4A11 /* mt_location_end_icon@3x.png in Resources */,
+				8BD8754626807EAF006D4A11 /* mt_location_begin_icon@2x.png in Resources */,
+				8BD8754826807EAF006D4A11 /* mt_location_end_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +375,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD3F2D2267C719A002F3097 /* MTTrackViewHelper.m in Sources */,
-				8BD3F2B3267C5131002F3097 /* XJTrackView.m in Sources */,
-				8BD3F2C9267C7003002F3097 /* XJAnnotationView.m in Sources */,
-				8BD3F2B5267C5131002F3097 /* XJTrackModel.m in Sources */,
-				8BD3F2C7267C7003002F3097 /* XJAnnotationModel.m in Sources */,
+				8BD3F2B3267C5131002F3097 /* MTTrackView.m in Sources */,
+				8BD3F2C9267C7003002F3097 /* MTAnnotationView.m in Sources */,
+				8BD8753F26806945006D4A11 /* MTCoreLocationTransform.m in Sources */,
+				8BD3F2B5267C5131002F3097 /* MTTrackModel.m in Sources */,
+				8BD3F2C7267C7003002F3097 /* MTAnnotationModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

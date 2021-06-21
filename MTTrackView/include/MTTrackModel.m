@@ -1,20 +1,19 @@
 //
-//  XJTrackModel.m
+//  MTTrackModel.m
 //  Demo
 //
 //  Created by APPLE on 2021/6/3.
 //
 
-#import <MTTrackView/XJTrackModel.h>
+#import <MTTrackView/MTTrackModel.h>
 #import "MTTrackViewHelper.h"
 
-@implementation XJTrackModel
+@implementation MTTrackModel
 
 - (instancetype)init {
     if (self = [super init]) {
         self.title = @"";
         self.subtitle = @"";
-        self.icon = [MTTrackViewHelper imageNamed:@"mt_location_icon"];
         
         self.coordinate = CLLocationCoordinate2DMake(0.0, 0.0);
     }
@@ -24,7 +23,7 @@
 
 - (instancetype)copyWithZone:(NSZone *)zone {
 
-    XJTrackModel *model =  [[[self class] allocWithZone:zone] init];
+    MTTrackModel *model =  [[[self class] allocWithZone:zone] init];
     
     model.coordinate = self.coordinate;
     
