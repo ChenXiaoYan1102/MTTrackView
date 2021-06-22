@@ -14,10 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MTTrackView : MKMapView
 
-- (instancetype)initWithOriginTrackModel:(MTTrackModel * _Nullable)originTrackModel
+- (instancetype)initWithOriginTrackModel:(MTTrackModel * _Nonnull)originTrackModel
                    destinationTrackModel:(MTTrackModel * _Nonnull)destinationTrackModel;
 
-- (instancetype)initWithDestinationTrackModel:(MTTrackModel *)destinationTrackModel;
+- (void)updateOriginTrackModel:(MTTrackModel * _Nonnull)originTrackModel;
 
 @end
 

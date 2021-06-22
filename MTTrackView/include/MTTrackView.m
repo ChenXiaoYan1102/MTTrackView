@@ -9,35 +9,29 @@
 #import <MTTrackView/MTTrackModel.h>
 #import <MTTrackView/MTTrackViewHelper.h>
 
-#import <CoreLocation/CoreLocation.h>
-
 #import "MTAnnotationModel.h"
 #import "MTAnnotationView.h"
 
-@interface MTTrackView () <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface MTTrackView () <MKMapViewDelegate>
 
 @property (nonatomic, strong) MTTrackModel *originTrackModel;
 
 @property (nonatomic, strong) MTTrackModel *destinationTrackModel;
- 
-@property (nonatomic, strong) CLLocationManager *locationManager;
 
 @end
 
 @implementation MTTrackView
 
-- (instancetype)initWithDestinationTrackModel:(MTTrackModel *)destinationTrackModel {
-    
-    return [self initWithOriginTrackModel:nil destinationTrackModel:destinationTrackModel];
-}
-
 - (instancetype)initWithOriginTrackModel:(MTTrackModel *)originTrackModel destinationTrackModel:(MTTrackModel *)destinationTrackModel {
     if (self = [super init]) {
-        if (self.originTrackModel &&
+        if (originTrackModel &&
             [originTrackModel isKindOfClass:[MTTrackModel class]]) {
             self.originTrackModel = [originTrackModel copy];
+        } else {
+            self.originTrackModel = [[MTTrackModel alloc] init];
         }
-        if ([destinationTrackModel isKindOfClass:[MTTrackModel class]]) {
+        if (destinationTrackModel &&
+            [destinationTrackModel isKindOfClass:[MTTrackModel class]]) {
             self.destinationTrackModel = [destinationTrackModel copy];
         } else {
             self.destinationTrackModel = [[MTTrackModel alloc] init];
@@ -52,10 +46,6 @@
 }
 
 - (void)setupData {
-    if (!self.originTrackModel) {
-        [self.locationManager startUpdatingLocation];
-        return;
-    }
 
     MKMapItem *originItem = [[MKMapItem alloc] initWithPlacemark:[[MKPlacemark alloc] initWithCoordinate:self.originTrackModel.coordinate addressDictionary:nil]];
     
@@ -63,13 +53,16 @@
     
     [self removeAnnotations:[self annotations]];
     
-    //添加标注
-    MTAnnotationModel *originAnno = [[MTAnnotationModel alloc] init];
-    originAnno.coordinate = self.originTrackModel.coordinate;
-    originAnno.title = self.originTrackModel.title;
-    originAnno.subtitle = self.originTrackModel.subtitle;
-    originAnno.icon = self.originTrackModel.icon ? self.originTrackModel.icon : [MTTrackViewHelper imageNamed:@"mt_location_begin_icon"];
-    [self addAnnotation:originAnno];
+    if (self.originTrackModel.coordinate.longitude != 0 &&
+        self.originTrackModel.coordinate.latitude != 0) {
+        //添加标注
+        MTAnnotationModel *originAnno = [[MTAnnotationModel alloc] init];
+        originAnno.coordinate = self.originTrackModel.coordinate;
+        originAnno.title = self.originTrackModel.title;
+        originAnno.subtitle = self.originTrackModel.subtitle;
+        originAnno.icon = self.originTrackModel.icon ? self.originTrackModel.icon : [MTTrackViewHelper imageNamed:@"mt_location_begin_icon"];
+        [self addAnnotation:originAnno];
+    }
     
     MTAnnotationModel *destAnno = [[MTAnnotationModel alloc] init];
     destAnno.coordinate = self.destinationTrackModel.coordinate;
@@ -78,6 +71,12 @@
     destAnno.icon = self.destinationTrackModel.icon ? self.destinationTrackModel.icon : [MTTrackViewHelper imageNamed:@"mt_location_end_icon"];
 
     [self addAnnotation:destAnno];
+    
+    //如果只有终点，则不进行路径规划
+    if (self.annotations.count <= 1) {
+        [self showVisibleRegion];
+        return;
+    }
     
     //创建路线请求
     MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
@@ -102,7 +101,34 @@
     }];
 }
 
+#pragma mark - Public
+- (void)updateOriginTrackModel:(MTTrackModel * _Nonnull)originTrackModel {
+    if (originTrackModel &&
+        [originTrackModel isKindOfClass:[MTTrackModel class]]) {
+        self.originTrackModel = [originTrackModel copy];
+    } else {
+        self.originTrackModel = [[MTTrackModel alloc] init];
+    }
+    
+    [self setupData];
+}
+
 #pragma mark - Custom Method
+//显示终点区域
+- (void)showVisibleRegion {
+    //计算中心点
+    CLLocationCoordinate2D centCoor = self.destinationTrackModel.coordinate;
+    
+    //计算地理位置的跨度 0.03为误差值
+    MKCoordinateSpan span;
+    span.latitudeDelta = 0.03;
+    span.longitudeDelta = 0.03;
+    
+    //得出数据的坐标区域
+    MKCoordinateRegion region = MKCoordinateRegionMake(centCoor, span);
+    [self setRegion:region];
+}
+
 //计算显示区域
 - (void)calculateVisibleRegion {
     //声明解析时对坐标数据的位置区域的筛选，包括经度和纬度的最小值和最大值
@@ -149,54 +175,6 @@
     MTAnnotationView *pin = [MTAnnotationView dequeueAnnotationViewWithMap:mapView annotation:annotation];
     
     return pin;
-}
-
-#pragma mark - CLLocationManagerDelegate
-/**
-*  更新到位置之后调用
-*
-*  @param manager   位置管理者
-*  @param locations 位置数组
-*/
--(void)locationManager:(CLLocationManager *)manager didUpdateLocations:( NSArray *)locations {
-    //停止位置更新
-    [manager stopUpdatingLocation];
-    
-    CLLocation *location = [locations firstObject];
-    
-    __weak typeof(self) weakSelf = self;
-    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
-    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
-        if (!error) {
-            for (CLPlacemark *place in placemarks) {
-                NSLog(@" 定位经纬度 %f,%f",place.location.coordinate.latitude, place.location.coordinate.longitude);
-                weakSelf.originTrackModel = [[MTTrackModel alloc] init];
-                weakSelf.originTrackModel.coordinate = place.location.coordinate;
-                [weakSelf setupData];
-                break;
-            }
-        } else {
-            NSLog(@"%@",error);
-        }
-    }];
-}
-
-#pragma mark - Lazy load
-//获取当前位置
-- (CLLocationManager *)locationManager {
-    if (!_locationManager) {
-        CLLocationManager * locationManager = [[CLLocationManager alloc] init];
-        locationManager.delegate = self ;
-        //kCLLocationAccuracyBest:设备使用电池供电时候最高的精度
-        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
-        locationManager.distanceFilter = 50.0f;
-        if (([[[ UIDevice currentDevice] systemVersion] doubleValue] >= 8.0))
-        {
-            [locationManager requestAlwaysAuthorization];
-        }
-       _locationManager = locationManager;
-    }
-    return _locationManager;
 }
 
 @end
