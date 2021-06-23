@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MTTrackView"
-  s.version      = "0.0.3"
+  s.version      = "0.0.5"
   s.summary      = "MTTrackView的一个简单示范工程."
 
   s.description  = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "10.0"
 
-  s.source       = { :git => "git@github.com:ChenXiaoYan1102/MTTrackView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ChenXiaoYan1102/MTTrackView.git", :tag => "#{s.version}" }
 
   s.public_header_files = "#{s.name}/*.h", "#{s.name}/include/**/*.h"
   s.source_files = "#{s.name}/**/*.{h,m}"
