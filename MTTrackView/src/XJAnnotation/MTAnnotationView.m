@@ -25,6 +25,7 @@
         
         annoView.annotation = annotation;
         annoView.image = model.icon;
+        annoView.centerOffset = CGPointMake(0, -annoView.image.size.height / 2);
 
         return annoView;
     }
